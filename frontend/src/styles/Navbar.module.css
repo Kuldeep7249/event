@@ -1,0 +1,44 @@
+.container{
+    background-image: linear-gradient(to right, #401a29 ,#8a3758 );
+    height: 100px;
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+.logo_text{
+    font-size : 40px;
+    margin: 0px 30px;
+    font-weight : 900;
+    font-family : "Roboto";
+    color : whitesmoke;
+}
+.logo{
+    flex : 1;
+}
+.menulink{
+    flex: 2;
+}
+.menulink span{
+    margin-right: 10%;
+    font-size: 17px;
+    cursor : pointer;
+    transition: all 0.1s ease;
+
+    color : whitesmoke
+}
+
+.notified button{
+    cursor: pointer;
+    background-color: pink;
+    padding : 15px;
+    color : white;
+    font-weight  : 900;
+    border :none;
+    margin: 0px 30px;
+    border-radius: 5px;
+}
+.notified button:hover{
+    color: #401a29;
+}
