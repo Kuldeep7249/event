@@ -1,5 +1,7 @@
+
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import styles from "../styles/Events.module.css";
 
 const Events = () => {
@@ -16,6 +18,8 @@ const Events = () => {
     userName: "",
     userEmail: "",
   });
+
+  const navigate = useNavigate(); // Initialize navigate
 
   // Fetch events
   useEffect(() => {
@@ -46,6 +50,12 @@ const Events = () => {
   return (
     <div className={styles.container}>
       <h1 className="h1Tag">Events</h1>
+
+      {/* Back Home Button */}
+      <button className={styles.backButton} onClick={() => navigate("/home")}>
+        Back Home
+      </button>
+
       <button
         className={styles.addButton}
         onClick={() => setShowAddEventForm(true)}

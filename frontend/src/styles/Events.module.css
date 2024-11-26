@@ -160,3 +160,17 @@
     background: #357abd;
   }
   
+  .backButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .backButton:hover {
+    background-color: #0056b3;
+  }
+  

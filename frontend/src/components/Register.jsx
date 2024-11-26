@@ -4,6 +4,9 @@ const Register = () => {
     const handleClose = () =>{
         window.location.reload();
     }
+    const Clickbutton = () =>{
+        return alert("Thank you for your interest! You will be notified about upcoming events.");
+    }
     return (
         <div className={styles.register}>
 
@@ -24,7 +27,7 @@ const Register = () => {
                     <label htmlFor="">Phone</label>
                     <input type="text" placeholder='+917895244178' />
 
-                    <button >Get notified</button>
+                    <button onClick = {Clickbutton}>Get notified</button>
 
                 </div>
                 <div className={styles.image}>

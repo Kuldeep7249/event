@@ -1,27 +1,21 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Featured from "./Featured";
-import Events from "./Events";
-import Signup from "./Signup";
-import Login from "./Login";
-
+import React from 'react'
+import Navbar from './Navbar'
+import Featured from './Featured'
+import Footer from './Footer'
+import Public_events from './public_events'
+// import MoreEvents from './MoreEvents'
 const HomePage = () => {
   return (
-    <Router>
-      <div>
+    <div>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Featured />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
+        <Featured />
+        {/* <MoreEvents/> */}
+        <br />
+        <Public_events/>
         <Footer />
-      </div>
-    </Router>
-  );
-};
+
+    </div>
+  )
+}
 
 export default HomePage;

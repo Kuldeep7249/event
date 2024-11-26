@@ -1,6 +1,11 @@
 import React from "react";
 import styles from "../styles/Featured.module.css";
+import { useNavigate } from "react-router-dom";
 const Featured = () => {
+  const navigate = useNavigate(); 
+  const handlevent = () =>{
+    navigate('/AnotherPublic_events');
+  }
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -53,7 +58,7 @@ const Featured = () => {
             <option value="Physical">Physical</option>
             <option value="Blended">Blended</option>
           </select>
-          <button className={styles.events_button}>Find Events</button>
+          <button className={styles.events_button} onClick = {handlevent}>Find Events</button>
         </div>
       </div>
     </div>
